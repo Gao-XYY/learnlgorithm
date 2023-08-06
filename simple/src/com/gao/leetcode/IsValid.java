@@ -22,7 +22,7 @@ class Solution005 {
         int n = s.length();
         int[] stack = new int[n];
         int idx = -1;//栈顶索引
-        Map<Character, Character> map = new HashMap<>() {{
+        Map<Character, Character> map = new HashMap<Character, Character>() {{
             put(')', '(');
             put(']', '[');
             put('}', '{');
