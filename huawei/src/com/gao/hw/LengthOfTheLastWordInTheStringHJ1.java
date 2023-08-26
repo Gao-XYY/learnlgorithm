@@ -16,6 +16,7 @@ public class LengthOfTheLastWordInTheStringHJ1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String world = in.nextLine();
+        //lastIndexOf 方法返回字符串中最后一次出现的指定字符的索引位置
         int index = world.lastIndexOf(" ");
         if (index < 0){
             System.out.println(world.length());

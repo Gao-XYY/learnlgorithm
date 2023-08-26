@@ -17,7 +17,7 @@ public class MergeTrees {
 
 class Solution015 {
 
-    public TreeNode01 mergeTrees(TreeNode01 root1, TreeNode01 root2) {
+    public TreeNode02 mergeTrees(TreeNode02 root1, TreeNode02 root2) {
         if (root1 == null){
             return root2;
         }
@@ -25,7 +25,7 @@ class Solution015 {
             return root1;
         }
 
-        TreeNode01 merged = new TreeNode01(root1.val + root2.val);
+        TreeNode02 merged = new TreeNode02(root1.val + root2.val);
         merged.left = mergeTrees(root1.left, root2.left);
         merged.right = mergeTrees(root1.right, root2.right);
         return merged;
@@ -36,11 +36,11 @@ class Solution015 {
 
 class TreeNode01 {
     int val;
-    TreeNode01 left;
-    TreeNode01 right;
+    TreeNode02 left;
+    TreeNode02 right;
     TreeNode01() {}
     TreeNode01(int val) { this.val = val; }
-    TreeNode01(int val, TreeNode01 left, TreeNode01 right) {
+    TreeNode01(int val, TreeNode02 left, TreeNode02 right) {
         this.val = val;
         this.left = left;
         this.right = right;
