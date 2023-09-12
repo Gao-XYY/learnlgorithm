@@ -33,4 +33,8 @@ public class SummaryRanges {
         return ret;
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }
